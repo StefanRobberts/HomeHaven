@@ -22,8 +22,8 @@ $options = [
 
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
-    echo "config.php loaded<br>"; // ✅ Add this debug message
+    //echo "config.php loaded<br>"; 
 } catch (PDOException $e) {
-    echo "Database connection failed: " . $e->getMessage(); // ⛔ Replaces `die()`
+    echo "Database connection failed: " . $e->getMessage(); 
     exit;
 }
